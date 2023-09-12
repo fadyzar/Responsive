@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsive</title>
+    <style>
+
+        body{
+            background-color: rgb(190,190,190);
+        }
+        .container{
+            display: flex;
+            
+           
+            
+        }
+
+        .navbar{
+            background-color: gray;
+        }
+
+        .logo{
+            margin-left: 30px;
+        }
+
+        .ul{
+          margin-left: 900px;
+          float: right;
+          background-color: red;
+          
+         
+        }
+
+        .ul ul{
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        .ul ul li{
+           padding: 10px;
+            justify-content: space-between;
+            list-style-type: none;
+           
+        }
+        .ul ul li a{
+            text-decoration: none;
+           
+        }
+
+        @media (min-width:200px){
+            .ul{
+                display: flex;
+            justify-content: space-between;
+           
+            }
+
+        }
+
+        @media (min-width:200px){
+            .logo{
+            display: block;
+            position: absolute;
+            
+            }
+        }
+
+        @media (max-width:1200px){
+            .ul ul {
+                display:inline-block;
+                position:absolute;
+               
+            justify-content: space-between;
+           
+
+            }
+
+        }
+
+       
+
+     
+     
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="container">
+            <div class="logo">
+                <h3>F-Z</h3>
+
+            </div>
+
+            <div class="ul">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+
+            </div>
+ 
+            
+        </div>
+
+
+    </nav>
+</body>
+</html>
